@@ -8,7 +8,10 @@ function calcular() {
 
     const imc = pesoValor / Math.pow(alturaValor, 2)
 
-    if (peso <= 0 && altura <= 0) {
+    if (peso <= 0 ) {
+        window.alert('Error: Peso e altura deve ser maior que zero.')
+        e.preventDefault()
+    } else if (altura <= 0) {
         window.alert('Error: Peso e altura deve ser maior que zero.')
         e.preventDefault()
     }
