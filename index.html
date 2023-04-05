@@ -10,24 +10,28 @@
 </head>
 <body>
     <div class="calculadora">
-        <h1>Calculador do IMC</h1>
-        <div class="peso">
-            <span>Ensira seu peso em quilogramas: </span>
-            <input type="text" maxlength="4" name="peso" id="peso">
-            <span>Kg.</span>
-        </div>
-        <div class="altura">
-            <span>Ensira sua altura em metros: </span>
-            <input type="text" maxlength="4" name="altura" id="altura">
-            <span>m.</span>
-        </div>
-        <div class="resultado">
-            <div>
-                <button id="calcular" type="submit" onclick="calcular()">Calcular IMC</button>
-                <button id="limparcalculo" type="submit" onclick="limparCalculo()">Limpar Calculo</button>
+        <div class="calculadora-container">
+            <h1>Calculadora IMC</h1>
+            <div class="display">
+                <p id="resultado-valor">
+                    
+                </p>
+                <p id="resultado">
+                    
+                </p>
             </div>
-            <div class="resposta"></div>
+            <div class="inputs">
+                <span>Digite seu peso: <input id="peso" type="text" placeholder="Peso em KG"> Kg.</span>
+                <span>Digite sua altura: <input id="altura" type="text" placeholder="Altura em m"> M.</span>
+            </div>
+            <div class="buttons">
+                <button type="submit" onclick="calcular()" >Calcular IMC</button>
+                <button type="submit" onclick="limpar()">Limpar Resultado</button>
+            </div>
         </div>
     </div>
+    <footer>
+        Desenvolvido &copy; Josue Carvalho
+    </footer>
 </body>
 </html>
